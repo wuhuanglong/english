@@ -1,4 +1,4 @@
-print ("上传测试")
+
 
 import requests
 def get_all_cookie():
