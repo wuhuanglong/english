@@ -1,6 +1,4 @@
-print ("hello python")
-print ("hello scalers")
-print ("scalerspython")
+
 
 import requests
 def get_all_cookie():
