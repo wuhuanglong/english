@@ -1,3 +1,5 @@
+import json
+
 import requests
 from requests.exceptions import RequestException
 import re
@@ -23,12 +25,16 @@ def parse_one_page(html):
             'time':  item[4].strip()[5:],
             'score': item[5]+item[6]
         }
+def write_to_file(content):
+    with open('result.txt','a') as  f:
+        f.write(json.dumps(content) + '\n')
+        f.close()
 def main():
     url = "http://maoyan.com/board/4?"
     html = get_one_page(url)
     for item in parse_one_page(html):
         print (item)
-
+        write_to_file(item)
 if  __name__ == "__main__":
     main()
 
