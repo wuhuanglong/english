@@ -26,8 +26,8 @@ def parse_one_page(html):
             'score': item[5]+item[6]
         }
 def write_to_file(content):
-    with open('result.txt','a') as  f:
-        f.write(json.dumps(content) + '\n')
+    with open('result.txt','a',encoding='utf-8') as  f:
+        f.write(json.dumps(content,ensure_ascii=False) + '\n')
         f.close()
 def main():
     url = "http://maoyan.com/board/4?"
