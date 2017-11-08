@@ -1,6 +1,9 @@
-from re import match
+import re
 def raw_input():
- word = raw_input ('input:')
- m = match('^[bh][aiu]t$', word)
+ name = raw_input('input:')
+ m = re.match('.+\s.+',name)
  if m is not None:
     print(m.group())
+
+
+
