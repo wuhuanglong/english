@@ -1,5 +1,6 @@
-import  re
-m = re.match('[bh][aiu]t',"bat,")
-if m is not None:
-    m.group()
+from re import match
+def raw_input():
+ word = raw_input ('input:')
+ m = match('^[bh][aiu]t$', word)
+ if m is not None:
     print(m.group())
