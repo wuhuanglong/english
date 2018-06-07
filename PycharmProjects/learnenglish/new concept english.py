@@ -1,5 +1,5 @@
 
-"Whose handbag is it ?"
+
 "Excese me!"
 "Is this your handbag ? "
 "Pardon ?"
